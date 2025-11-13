@@ -1,0 +1,897 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Piso en Venta Calle de Conca 13, Arrancapins Valencia | 198m² 7 Habitaciones";
+const description = "Piso en venta de 198m² con 7 habitaciones en Calle de Conca 13, Arrancapins. Frente a Gran Vía, 2 terrazas, cocina office 60m². Gastos comunitarios 30€/trimestre. A 1 minuto Plaza España.";
+const keywords = "piso en venta calle conca valencia, comprar piso arrancapins valencia, piso 198m2 arrancapins, vivienda 7 habitaciones valencia, piso frente gran via valencia, viviendas extramurs valencia, piso dos terrazas valencia";
+---
+
+<Layout title={title} description={description} keywords={keywords}>
+  
+  <!-- Header Minimalista -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white">
+    <nav class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
+      <a href="#inicio" class="text-sm font-light tracking-[0.3em] text-black">
+        CONCA 13
+      </a>
+      <ul class="hidden md:flex items-center space-x-12 text-xs font-light tracking-widest">
+        <li><a href="#inicio" class="text-gray-600 hover:text-black transition-colors">INICIO</a></li>
+        <li><a href="#detalles" class="text-gray-600 hover:text-black transition-colors">DETALLES</a></li>
+        <li><a href="#galeria" class="text-gray-600 hover:text-black transition-colors">GALERÍA</a></li>
+        <li><a href="#ubicacion" class="text-gray-600 hover:text-black transition-colors">UBICACIÓN</a></li>
+        <li><a href="#contacto" class="bg-black text-white px-6 py-3 hover:bg-gray-800 transition-colors">CONTACTO</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden text-black">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-8 py-6">
+      <ul class="space-y-4 text-xs font-light tracking-widest">
+        <li><a href="#inicio" class="block text-gray-600">INICIO</a></li>
+        <li><a href="#detalles" class="block text-gray-600">DETALLES</a></li>
+        <li><a href="#galeria" class="block text-gray-600">GALERÍA</a></li>
+        <li><a href="#ubicacion" class="block text-gray-600">UBICACIÓN</a></li>
+        <li><a href="#contacto" class="block text-gray-600">CONTACTO</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section - Fullscreen Impactante -->
+  <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Imagen de fondo -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="/1297813862.jpg" 
+        alt="Piso en venta Calle de Conca 13 Arrancapins Valencia" 
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+    </div>
+
+    <!-- Contenido superpuesto -->
+    <div class="relative z-10 max-w-7xl mx-auto px-8 py-32 text-center">
+      <div class="space-y-8">
+        <!-- Etiqueta superior -->
+        <div class="inline-block">
+          <span class="text-xs tracking-[0.4em] text-white/80 bg-white/10 backdrop-blur-sm px-6 py-3">
+            ARRANCAPINS, VALENCIA
+          </span>
+        </div>
+
+        <!-- Título principal -->
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-extralight text-white mb-8 leading-[0.9] tracking-tight">
+          Calle de<br/>
+          <span class="font-light">Conca 13</span>
+        </h1>
+
+        <!-- Detalles clave -->
+        <div class="flex items-center justify-center gap-8 md:gap-16 text-white/90 mb-12">
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-extralight mb-1">198</div>
+            <div class="text-xs tracking-[0.2em]">M²</div>
+          </div>
+          <div class="w-px h-12 bg-white/20"></div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-extralight mb-1">7</div>
+            <div class="text-xs tracking-[0.2em]">HAB</div>
+          </div>
+          <div class="w-px h-12 bg-white/20"></div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-extralight mb-1">2</div>
+            <div class="text-xs tracking-[0.2em]">BAÑOS</div>
+          </div>
+        </div>
+
+        <!-- Precio destacado -->
+        <div class="mb-12">
+          <div class="text-5xl md:text-6xl font-extralight text-white mb-2">570.000 €</div>
+          <div class="text-sm text-white/60 tracking-wider">2.879 €/m² · Frente a Gran Vía</div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
+          <a 
+            href="#contacto" 
+            class="group relative bg-white text-black px-10 py-5 text-xs tracking-[0.25em] hover:bg-black hover:text-white transition-all duration-300 overflow-hidden"
+          >
+            <span class="relative z-10">SOLICITAR VISITA</span>
+          </a>
+          <a 
+            href="tel:+34602214093" 
+            class="bg-transparent border border-white text-white px-10 py-5 text-xs tracking-[0.25em] hover:bg-white hover:text-black transition-all duration-300"
+          >
+            LLAMAR AHORA
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+      <a href="#detalles" class="flex flex-col items-center text-white/60 hover:text-white transition-colors group">
+        <span class="text-xs tracking-[0.3em] mb-3">SCROLL</span>
+        <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Características Grid -->
+  <section class="py-24 bg-gray-bg">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid md:grid-cols-4 gap-px bg-gray-200">
+        <div class="bg-white p-12 text-center">
+          <div class="text-4xl font-light text-black mb-3">198</div>
+          <div class="text-xs tracking-[0.2em] text-gray-400">M² CONSTRUIDOS</div>
+        </div>
+        <div class="bg-white p-12 text-center">
+          <div class="text-4xl font-light text-black mb-3">7</div>
+          <div class="text-xs tracking-[0.2em] text-gray-400">HABITACIONES</div>
+        </div>
+        <div class="bg-white p-12 text-center">
+          <div class="text-4xl font-light text-black mb-3">2</div>
+          <div class="text-xs tracking-[0.2em] text-gray-400">BAÑOS</div>
+        </div>
+        <div class="bg-white p-12 text-center">
+          <div class="text-4xl font-light text-black mb-3">2</div>
+          <div class="text-xs tracking-[0.2em] text-gray-400">TERRAZAS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detalles Section -->
+  <section id="detalles" class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-4xl mb-24">
+        <p class="text-xs tracking-[0.3em] text-gray-400 mb-8">CARACTERÍSTICAS</p>
+        <h2 class="text-4xl lg:text-5xl font-light text-black mb-8 leading-tight">
+          Un espacio excepcional en el corazón de Valencia
+        </h2>
+        <p class="text-lg text-gray-500 font-light leading-relaxed">
+          Amplio piso de 198m² con 7 habitaciones ubicado frente a Gran Vía Fernando el Católico. 
+          A escasos metros del metro y a un minuto de Plaza de España. Dos terrazas con orientación sur y cocina office de 60m².
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="bg-white shadow-sm p-10">
+          <div class="text-xs tracking-[0.2em] text-gray-400 mb-6">01</div>
+          <h3 class="text-xl font-light text-black mb-4">Dos Terrazas</h3>
+          <p class="text-sm text-gray-500 font-light leading-relaxed">
+            Terraza con orientación sur a calle Conca y otra con vistas a gran patio de manzanas. Orientación norte-sur perfecta.
+          </p>
+        </div>
+        
+        <div class="bg-white shadow-sm p-10">
+          <div class="text-xs tracking-[0.2em] text-gray-400 mb-6">02</div>
+          <h3 class="text-xl font-light text-black mb-4">Cocina Office 60m²</h3>
+          <p class="text-sm text-gray-500 font-light leading-relaxed">
+            Amplia cocina office de aproximadamente 60m². Espacio ideal para reuniones familiares y vida social.
+          </p>
+        </div>
+        
+        <div class="bg-white shadow-sm p-10">
+          <div class="text-xs tracking-[0.2em] text-gray-400 mb-6">03</div>
+          <h3 class="text-xl font-light text-black mb-4">Gastos Mínimos</h3>
+          <p class="text-sm text-gray-500 font-light leading-relaxed">
+            Solo 30€/trimestre. Participación en locales del edificio. Fondos siempre disponibles sin derramas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería Section con Modal -->
+  <section id="galeria" class="py-32 bg-gray-bg">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="mb-16">
+        <p class="text-xs tracking-[0.3em] text-gray-400 mb-4">GALERÍA</p>
+        <h2 class="text-4xl font-light text-black">Explore el inmueble</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="0">
+          <img src="/1297813862.jpg" alt="Vista piso Arrancapins" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            1 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="1">
+          <img src="/1297813995.jpg" alt="Cocina piso Valencia" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            2 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="2">
+          <img src="/1297813996.jpg" alt="Habitación principal" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            3 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="3">
+          <img src="/1297813998.jpg" alt="Baño reformado" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            4 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="4">
+          <img src="/1297813999.jpg" alt="Terraza piso Arrancapins" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            5 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="5">
+          <img src="/1297814000.jpg" alt="Vista piso Valencia" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            6 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="6">
+          <img src="/1297814001.jpg" alt="Detalle piso" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            7 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="7">
+          <img src="/1297814002.jpg" alt="Espacio piso" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            8 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-white shadow-sm overflow-hidden cursor-pointer gallery-item group" data-index="8">
+          <img src="/1297814013.jpg" alt="Ambiente piso" class="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+          <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-sm text-white px-3 py-1 text-xs tracking-wider">
+            9 / 9
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plano del Piso Section -->
+  <section class="py-32 bg-gray-bg">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="mb-16 text-center">
+        <p class="text-xs tracking-[0.3em] text-gray-400 mb-4">DISTRIBUCIÓN</p>
+        <h2 class="text-4xl font-light text-black">Plano del Inmueble</h2>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          198 m² distribuidos de forma óptima con 7 habitaciones, 2 baños completos y amplios espacios de vida
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto">
+        <div class="bg-white shadow-sm overflow-hidden">
+          <img 
+            src="/1297813999.jpg" 
+            alt="Plano del piso - Calle Cuenca 13 Arrancapins Valencia" 
+            class="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+        
+        <!-- Detalles clave del plano -->
+        <div class="grid md:grid-cols-4 gap-6 mt-12">
+          <div class="bg-white p-6 shadow-sm text-center">
+            <div class="text-3xl font-extralight text-black mb-2">198 m²</div>
+            <div class="text-xs tracking-wider text-gray-500">SUPERFICIE CONSTRUIDA</div>
+          </div>
+          <div class="bg-white p-6 shadow-sm text-center">
+            <div class="text-3xl font-extralight text-black mb-2">7</div>
+            <div class="text-xs tracking-wider text-gray-500">HABITACIONES</div>
+          </div>
+          <div class="bg-white p-6 shadow-sm text-center">
+            <div class="text-3xl font-extralight text-black mb-2">2</div>
+            <div class="text-xs tracking-wider text-gray-500">BAÑOS COMPLETOS</div>
+          </div>
+          <div class="bg-white p-6 shadow-sm text-center">
+            <div class="text-3xl font-extralight text-black mb-2">2</div>
+            <div class="text-xs tracking-wider text-gray-500">TERRAZAS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Lightbox -->
+  <div id="lightbox-modal" class="fixed inset-0 z-[100] hidden bg-black/95 backdrop-blur-sm">
+    <div class="relative w-full h-full flex items-center justify-center p-4">
+      <!-- Cerrar -->
+      <button id="close-modal" class="absolute top-8 right-8 text-white/80 hover:text-white transition-colors z-10">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <!-- Navegación Anterior -->
+      <button id="prev-image" class="absolute left-8 top-1/2 -translate-y-1/2 text-white/80 hover:text-white transition-colors">
+        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+
+      <!-- Imagen -->
+      <div class="max-w-6xl max-h-[90vh] flex items-center justify-center">
+        <img id="lightbox-image" src="" alt="" class="max-w-full max-h-[90vh] object-contain shadow-2xl" />
+      </div>
+
+      <!-- Navegación Siguiente -->
+      <button id="next-image" class="absolute right-8 top-1/2 -translate-y-1/2 text-white/80 hover:text-white transition-colors">
+        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+
+      <!-- Contador -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 text-sm tracking-wider">
+        <span id="current-image">1</span> / <span id="total-images">12</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Tour Section -->
+  <section class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="mb-16 text-center">
+        <p class="text-xs tracking-[0.3em] text-gray-400 mb-4">VIDEO TOUR</p>
+        <h2 class="text-4xl font-light text-black">Recorrido Virtual</h2>
+      </div>
+
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-white shadow-sm overflow-hidden aspect-video">
+          <video 
+            controls 
+            class="w-full h-full object-cover"
+            poster="/1297813862.jpg"
+          >
+            <source src="https://st3v.idealista.com/cc/a1/14/hd_1387613350.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+          </video>
+        </div>
+        <p class="text-sm text-gray-500 font-light text-center mt-6">
+          Recorra el inmueble desde la comodidad de su hogar
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especificaciones -->
+  <section class="py-24 bg-gray-bg">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="bg-white shadow-sm p-16">
+        <h3 class="text-2xl font-light text-black mb-12 tracking-wide">Especificaciones</h3>
+        <div class="grid md:grid-cols-2 gap-x-20 gap-y-6">
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Dirección</span>
+            <span class="text-sm text-black">Calle de Conca 13, 4ª</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Superficie construida</span>
+            <span class="text-sm text-black">198 m²</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Superficie útil</span>
+            <span class="text-sm text-black">182 m²</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Habitaciones</span>
+            <span class="text-sm text-black">7 (5 actuales)</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Baños</span>
+            <span class="text-sm text-black">2</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Terrazas</span>
+            <span class="text-sm text-black">2</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Planta</span>
+            <span class="text-sm text-black">4ª con ascensor</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Orientación</span>
+            <span class="text-sm text-black">Norte-Sur</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Año construcción</span>
+            <span class="text-sm text-black">1958</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Gastos comunitarios</span>
+            <span class="text-sm text-black">30 €/trimestre</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Armarios empotrados</span>
+            <span class="text-sm text-black">Sí</span>
+          </div>
+          
+          <div class="flex justify-between items-center py-5 border-b border-gray-100">
+            <span class="text-sm text-gray-400 tracking-wider">Doble entrada</span>
+            <span class="text-sm text-black">Sí</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ubicación Section -->
+  <section id="ubicacion" class="py-32 bg-gray-bg">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid lg:grid-cols-2 gap-20">
+        <div>
+          <p class="text-xs tracking-[0.3em] text-gray-400 mb-8">UBICACIÓN</p>
+          <h2 class="text-4xl font-light text-black mb-8 leading-tight">
+            Arrancapins,<br/>Valencia
+          </h2>
+          <p class="text-lg text-gray-500 font-light leading-relaxed mb-12">
+            Ubicación excepcional frente a Gran Vía Fernando el Católico. A escasos pasos del metro 
+            y a solo un minuto de Plaza de España y Plaza del Ayuntamiento.
+          </p>
+
+          <div class="space-y-8">
+            <div class="border-l-2 border-black pl-6">
+              <h4 class="text-sm font-light text-black mb-2 tracking-wide">Transporte Premium</h4>
+              <p class="text-sm text-gray-500 font-light leading-relaxed">
+                Boca de metro a escasos metros. Estación AVE Joaquín Sorolla a 15 minutos a pie.
+              </p>
+            </div>
+            
+            <div class="border-l-2 border-black pl-6">
+              <h4 class="text-sm font-light text-black mb-2 tracking-wide">Servicios Completos</h4>
+              <p class="text-sm text-gray-500 font-light leading-relaxed">
+                Rodeado de colegios, centros médicos, farmacias. Todo lo necesario a pie de calle.
+              </p>
+            </div>
+            
+            <div class="border-l-2 border-black pl-6">
+              <h4 class="text-sm font-light text-black mb-2 tracking-wide">Naturaleza Urbana</h4>
+              <p class="text-sm text-gray-500 font-light leading-relaxed">
+                Muy cerca del cauce del río Turia. Ideal para deporte y paseos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="bg-white shadow-sm overflow-hidden mb-6">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.9247584857665!2d-0.3784863!3d39.4659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0x0!2zMznCsDI3JzU3LjIiTiAwwrAyMic0Mi42Ilc!5e0!3m2!1ses!2ses!4v1234567890"
+              width="100%"
+              height="500"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa ubicación Calle de Conca 13, Arrancapins, Valencia"
+            ></iframe>
+          </div>
+          
+          <div class="bg-white shadow-sm p-8">
+            <div class="text-xs tracking-wider text-gray-400 mb-3">DIRECCIÓN</div>
+            <div class="text-sm text-black mb-1">Calle de Conca 13, 4ª Planta</div>
+            <div class="text-sm text-gray-500">46006 Valencia, España</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto Section -->
+  <section id="contacto" class="py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid lg:grid-cols-2 gap-20">
+        <div>
+          <p class="text-xs tracking-[0.3em] text-gray-400 mb-8">CONTACTO</p>
+          <h2 class="text-4xl font-light text-black mb-8 leading-tight">
+            Solicite una visita
+          </h2>
+          <p class="text-lg text-gray-500 font-light leading-relaxed mb-16">
+            Estaremos encantados de mostrarle este excepcional inmueble. 
+            Horarios flexibles y visitas sin compromiso.
+          </p>
+
+          <div class="space-y-10">
+          <div>
+            <div class="text-xs tracking-wider text-gray-400 mb-3">TELÉFONO</div>
+            <a href="tel:+34602214093" class="text-2xl font-light text-black hover:text-gray-600 transition-colors">
+              +34 602 214 093
+            </a>
+          </div>
+            
+            <div>
+              <div class="text-xs tracking-wider text-gray-400 mb-3">EMAIL</div>
+              <a href="mailto:contacto@pisoarrancapins.com" class="text-2xl font-light text-black hover:text-gray-600 transition-colors">
+                contacto@pisoarrancapins.com
+              </a>
+            </div>
+            
+            <div>
+              <div class="text-xs tracking-wider text-gray-400 mb-3">WHATSAPP</div>
+              <a href="https://wa.me/34602214093" class="text-2xl font-light text-black hover:text-gray-600 transition-colors">
+                Enviar mensaje
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form id="contact-form" class="bg-white shadow-sm p-12 space-y-6">
+            <div>
+              <label for="nombre" class="block text-xs tracking-wider text-gray-400 mb-3">NOMBRE COMPLETO</label>
+              <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                required
+                class="w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors"
+                placeholder=""
+              />
+            </div>
+            
+            <div>
+              <label for="email" class="block text-xs tracking-wider text-gray-400 mb-3">EMAIL</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors"
+                placeholder=""
+              />
+            </div>
+            
+            <div>
+              <label for="telefono" class="block text-xs tracking-wider text-gray-400 mb-3">TELÉFONO</label>
+              <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono" 
+                required
+                class="w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors"
+                placeholder=""
+              />
+            </div>
+            
+            <div>
+              <label for="mensaje" class="block text-xs tracking-wider text-gray-400 mb-3">MENSAJE</label>
+              <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                rows="4"
+                required
+                class="w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors resize-none"
+                placeholder=""
+              ></textarea>
+            </div>
+            
+            <button 
+              type="submit"
+              class="w-full bg-black text-white px-8 py-4 text-xs tracking-[0.2em] hover:bg-gray-800 transition-colors mt-8"
+            >
+              ENVIAR SOLICITUD
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-bg py-16">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid md:grid-cols-3 gap-12 pb-12 mb-12 border-b border-gray-200">
+        <div>
+          <h3 class="text-sm font-light text-black mb-4 tracking-wide">Calle de Conca 13</h3>
+          <p class="text-xs text-gray-500 font-light leading-relaxed">
+            Excepcional piso de 198m² en Arrancapins, Valencia.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-xs tracking-wider text-gray-400 mb-4">NAVEGACIÓN</h4>
+          <ul class="space-y-2 text-xs font-light">
+            <li><a href="#inicio" class="text-gray-500 hover:text-black transition-colors">Inicio</a></li>
+            <li><a href="#detalles" class="text-gray-500 hover:text-black transition-colors">Detalles</a></li>
+            <li><a href="#galeria" class="text-gray-500 hover:text-black transition-colors">Galería</a></li>
+            <li><a href="#ubicacion" class="text-gray-500 hover:text-black transition-colors">Ubicación</a></li>
+            <li><a href="#contacto" class="text-gray-500 hover:text-black transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-xs tracking-wider text-gray-400 mb-4">CONTACTO</h4>
+          <ul class="space-y-2 text-xs font-light text-gray-500">
+            <li>+34 602 214 093</li>
+            <li>contacto@pisoarrancapins.com</li>
+            <li>Calle de Conca 13, 4ª</li>
+            <li>46006 Valencia</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="text-center">
+        <p class="text-xs text-gray-400 font-light">
+          © 2024 Calle de Conca 13 - Arrancapins
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    menuToggle?.addEventListener('click', () => {
+      mobileMenu?.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu?.querySelectorAll('a');
+    mobileLinks?.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu?.classList.add('hidden');
+      });
+    });
+
+    // Form submission
+    const contactForm = document.getElementById('contact-form');
+    contactForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(contactForm as HTMLFormElement);
+      const data = Object.fromEntries(formData);
+      
+      console.log('Form submitted:', data);
+      
+      alert('Gracias por su interés. Nos pondremos en contacto con usted a la mayor brevedad.');
+      
+      (contactForm as HTMLFormElement).reset();
+    });
+
+    // Smooth scroll behavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href') as string);
+        target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Lightbox Gallery - Todas las imágenes para el modal
+    const galleryImages = [
+      { src: '/1297813862.jpg', alt: 'Vista piso Arrancapins' },
+      { src: '/1297813995.jpg', alt: 'Cocina piso Valencia' },
+      { src: '/1297813996.jpg', alt: 'Habitación principal' },
+      { src: '/1297813998.jpg', alt: 'Baño reformado' },
+      { src: '/1297813999.jpg', alt: 'Terraza piso Arrancapins' },
+      { src: '/1297814000.jpg', alt: 'Vista piso Valencia' },
+      { src: '/1297814001.jpg', alt: 'Detalle piso' },
+      { src: '/1297814002.jpg', alt: 'Espacio piso' },
+      { src: '/1297814013.jpg', alt: 'Ambiente piso' },
+      { src: '/1297814014.jpg', alt: 'Detalle interior' },
+      { src: '/1297814015.jpg', alt: 'Espacio reformado' },
+      { src: '/1297814016.jpg', alt: 'Vista general' },
+      { src: '/1297814017.jpg', alt: 'Interior piso' },
+      { src: '/1297814018.jpg', alt: 'Detalle habitación' },
+      { src: '/1297814019.jpg', alt: 'Espacio cocina' },
+      { src: '/1297814020.jpg', alt: 'Vista salón' },
+      { src: '/1297814021.jpg', alt: 'Detalle baño' },
+      { src: '/1297814022.jpg', alt: 'Habitación' },
+      { src: '/1297814024.jpg', alt: 'Interior' },
+      { src: '/1297814026.jpg', alt: 'Espacio' },
+      { src: '/1297814028.jpg', alt: 'Vista' },
+      { src: '/1297814029.jpg', alt: 'Detalle' },
+      { src: '/1297814032.jpg', alt: 'Interior piso' },
+      { src: '/1297814034.jpg', alt: 'Habitación' },
+      { src: '/1297814036.jpg', alt: 'Espacio' },
+      { src: '/1297814037.jpg', alt: 'Vista' },
+      { src: '/1297814040.jpg', alt: 'Detalle' },
+      { src: '/1297814042.jpg', alt: 'Interior' },
+      { src: '/1297814043.jpg', alt: 'Espacio' },
+      { src: '/1297814047.jpg', alt: 'Vista' },
+      { src: '/1297814052.jpg', alt: 'Detalle' },
+      { src: '/1297814053.jpg', alt: 'Interior' },
+      { src: '/1297814054.jpg', alt: 'Espacio' },
+      { src: '/1297814056.jpg', alt: 'Vista' },
+      { src: '/1297814057.jpg', alt: 'Detalle' },
+      { src: '/1297814059.jpg', alt: 'Interior' },
+      { src: '/1297814061.jpg', alt: 'Espacio' },
+      { src: '/1297814063.jpg', alt: 'Vista' },
+      { src: '/1297814064.jpg', alt: 'Detalle' },
+      { src: '/1297814065.jpg', alt: 'Interior' },
+      { src: '/1297814066.jpg', alt: 'Espacio' },
+      { src: '/1297814067.jpg', alt: 'Vista' },
+      { src: '/1297814068.jpg', alt: 'Detalle' },
+      { src: '/1297814069.jpg', alt: 'Interior' },
+      { src: '/1297814070.jpg', alt: 'Espacio' },
+      { src: '/1297814071.jpg', alt: 'Vista' },
+      { src: '/1297814072.jpg', alt: 'Detalle' },
+      { src: '/1297814073.jpg', alt: 'Interior' },
+      { src: '/1297814083.jpg', alt: 'Espacio' },
+      { src: '/1297814084.jpg', alt: 'Vista' },
+      { src: '/1297814085.jpg', alt: 'Detalle' },
+      { src: '/1297814086.jpg', alt: 'Interior' },
+      { src: '/1297814087.jpg', alt: 'Espacio' },
+      { src: '/1297814088.jpg', alt: 'Vista' },
+      { src: '/1297814089.jpg', alt: 'Detalle' },
+      { src: '/1297814090.jpg', alt: 'Interior' },
+      { src: '/1297814091.jpg', alt: 'Vista final' }
+    ];
+
+    let currentImageIndex = 0;
+    const modal = document.getElementById('lightbox-modal');
+    const lightboxImage = document.getElementById('lightbox-image') as HTMLImageElement;
+    const currentImageSpan = document.getElementById('current-image');
+    const totalImagesSpan = document.getElementById('total-images');
+    const closeModalBtn = document.getElementById('close-modal');
+    const prevImageBtn = document.getElementById('prev-image');
+    const nextImageBtn = document.getElementById('next-image');
+
+    // Actualizar total de imágenes
+    if (totalImagesSpan) {
+      totalImagesSpan.textContent = galleryImages.length.toString();
+    }
+
+    // Función para mostrar imagen
+    function showImage(index: number) {
+      currentImageIndex = index;
+      if (lightboxImage && currentImageSpan) {
+        lightboxImage.src = galleryImages[index].src;
+        lightboxImage.alt = galleryImages[index].alt;
+        currentImageSpan.textContent = (index + 1).toString();
+      }
+    }
+
+    // Abrir modal al hacer click en imagen
+    // Mapeo de índices del grid (0-8) a índices reales en galleryImages
+    const gridToGalleryIndex = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+    
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        const gridIndex = parseInt(item.getAttribute('data-index') || '0');
+        const galleryIndex = gridToGalleryIndex[gridIndex];
+        showImage(galleryIndex);
+        modal?.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    // Cerrar modal
+    closeModalBtn?.addEventListener('click', () => {
+      modal?.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Cerrar al hacer click fuera de la imagen
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = 'auto';
+      }
+    });
+
+    // Navegación anterior
+    prevImageBtn?.addEventListener('click', () => {
+      const newIndex = currentImageIndex > 0 ? currentImageIndex - 1 : galleryImages.length - 1;
+      showImage(newIndex);
+    });
+
+    // Navegación siguiente
+    nextImageBtn?.addEventListener('click', () => {
+      const newIndex = currentImageIndex < galleryImages.length - 1 ? currentImageIndex + 1 : 0;
+      showImage(newIndex);
+    });
+
+    // Navegación con teclado
+    document.addEventListener('keydown', (e) => {
+      if (!modal?.classList.contains('hidden')) {
+        if (e.key === 'ArrowLeft') {
+          prevImageBtn?.click();
+        } else if (e.key === 'ArrowRight') {
+          nextImageBtn?.click();
+        } else if (e.key === 'Escape') {
+          closeModalBtn?.click();
+        }
+      }
+    });
+  </script>
+</Layout>
