@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://piso-arrancapins-valencia.com',
+  site: 'https://www.pisocuenca13.es',
   compressHTML: true,
   build: {
     inlineStylesheets: 'auto'

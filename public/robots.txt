@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://piso-arrancapins-valencia.com/sitemap.xml
+Sitemap: https://www.pisocuenca13.es/sitemap.xml
 
