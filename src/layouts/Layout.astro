@@ -20,6 +20,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <meta name="google-site-verification" content="pcb3-o2X1i7Xw_zCXY1XjuUwNIPSyzkP_-P81qkLJ_s" />
   <link rel="canonical" href={canonicalURL}>
   
+  <!-- Google tag (gtag.js) para campañas de Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17758824578"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17758824578');
+  </script>
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content={canonicalURL}>
