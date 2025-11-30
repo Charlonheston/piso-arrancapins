@@ -734,9 +734,14 @@ const keywords = "piso en venta calle conca valencia, comprar piso arrancapins v
         </div>
       </div>
       
-      <div class="text-center">
+      <div class="text-center space-y-4">
+        <div class="flex items-center justify-center gap-4 text-xs text-gray-500 font-light">
+          <a href="/privacidad" class="hover:text-black transition-colors">Política de Privacidad</a>
+          <span>•</span>
+          <a href="/cookies" class="hover:text-black transition-colors">Política de Cookies</a>
+        </div>
         <p class="text-xs text-gray-400 font-light">
-          © 2024 Calle de Conca 13 - Arrancapins
+          © 2025 Calle de Conca 13 - Arrancapins
         </p>
       </div>
     </div>
@@ -982,5 +987,60 @@ const keywords = "piso en venta calle conca valencia, comprar piso arrancapins v
         }
       }
     });
+
+    // Banner de Cookies
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptCookies = document.getElementById('accept-cookies');
+    const rejectCookies = document.getElementById('reject-cookies');
+    const cookieSettings = document.getElementById('cookie-settings');
+
+    // Verificar si ya se aceptaron/rechazaron las cookies
+    if (!localStorage.getItem('cookies-accepted') && !localStorage.getItem('cookies-rejected')) {
+      cookieBanner?.classList.remove('hidden');
+    }
+
+    // Aceptar cookies
+    acceptCookies?.addEventListener('click', () => {
+      localStorage.setItem('cookies-accepted', 'true');
+      localStorage.setItem('cookies-rejected', 'false');
+      cookieBanner?.classList.add('hidden');
+      // Aquí puedes inicializar Google Analytics y Google Ads si los tienes
+    });
+
+    // Rechazar cookies
+    rejectCookies?.addEventListener('click', () => {
+      localStorage.setItem('cookies-rejected', 'true');
+      localStorage.setItem('cookies-accepted', 'false');
+      cookieBanner?.classList.add('hidden');
+    });
   </script>
+
+  <!-- Banner de Cookies -->
+  <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 shadow-lg">
+    <div class="max-w-7xl mx-auto px-8 py-6">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="flex-1">
+          <p class="text-sm text-gray-700 mb-2">
+            <strong class="text-black">Utilizamos cookies</strong> para mejorar su experiencia, analizar el tráfico del sitio y personalizar el contenido. 
+            Al hacer clic en "Aceptar", acepta nuestro uso de cookies. 
+            <a href="/cookies" class="text-black underline">Más información</a>
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button 
+            id="reject-cookies"
+            class="px-4 py-2 text-xs tracking-wider text-gray-600 hover:text-black transition-colors"
+          >
+            Rechazar
+          </button>
+          <button 
+            id="accept-cookies"
+            class="px-6 py-2 bg-black text-white text-xs tracking-wider hover:bg-gray-800 transition-colors"
+          >
+            Aceptar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
