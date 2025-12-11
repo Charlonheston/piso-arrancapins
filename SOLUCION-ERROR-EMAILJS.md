@@ -74,3 +74,6 @@ Luego actualiza el código en `src/pages/index.astro`
    - Template ID: (pendiente)
    - Public Key: (pendiente)
 
+
+
+

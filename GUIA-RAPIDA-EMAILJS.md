@@ -131,3 +131,6 @@ El plan gratuito de EmailJS te da **200 emails por mes**, que es más que sufici
 ¡Listo! En menos de 10 minutos tendrás tu formulario enviando emails a Gmail. 🎉
 
 
+
+
+
