@@ -60,59 +60,143 @@ const keywords = "piso en venta calle conca valencia, comprar piso arrancapins v
     </div>
 
     <!-- Contenido superpuesto -->
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-20 md:py-32 text-center">
-      <div class="space-y-8">
-        <!-- Etiqueta superior -->
-        <div class="inline-block">
-          <span class="text-xs tracking-[0.4em] text-white/80 bg-white/10 backdrop-blur-sm px-6 py-3">
-            ARRANCAPINS, VALENCIA
-          </span>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-20 md:py-32">
+      <div class="grid gap-12 lg:grid-cols-2 items-start">
+        <!-- Columna texto hero -->
+        <div class="space-y-8 text-center lg:text-left">
+          <!-- Etiqueta superior -->
+          <div class="inline-block">
+            <span class="text-xs tracking-[0.4em] text-white/80 bg-white/10 backdrop-blur-sm px-6 py-3">
+              ARRANCAPINS, VALENCIA
+            </span>
+          </div>
+        
+          <!-- Título principal -->
+          <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-extralight text-white mb-8 leading-[0.9] tracking-tight">
+            Calle de<br/>
+            <span class="font-light">Conca 13</span>
+          </h1>
+        
+          <!-- Detalles clave -->
+          <div class="flex items-center justify-center lg:justify-start gap-8 md:gap-16 text-white/90 mb-12">
+            <div class="text-center">
+              <div class="text-3xl md:text-4xl font-extralight mb-1">198</div>
+              <div class="text-xs tracking-[0.2em]">M²</div>
+            </div>
+            <div class="w-px h-12 bg-white/20"></div>
+            <div class="text-center">
+              <div class="text-3xl md:text-4xl font-extralight mb-1">4</div>
+              <div class="text-xs tracking-[0.2em]">HAB</div>
+            </div>
+            <div class="w-px h-12 bg-white/20"></div>
+            <div class="text-center">
+              <div class="text-3xl md:text-4xl font-extralight mb-1">2</div>
+              <div class="text-xs tracking-[0.2em]">BAÑOS</div>
+            </div>
+          </div>
+        
+          <!-- Precio destacado -->
+          <div class="mb-8 md:mb-12">
+            <div class="text-4xl sm:text-5xl md:text-6xl font-extralight text-white mb-2">570.000 €</div>
+            <div class="text-xs sm:text-sm text-white/60 tracking-wider">2.879 €/m² · Frente a Gran Vía</div>
+          </div>
+        
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3 sm:gap-4 pt-6 md:pt-8">
+            <a 
+              href="https://wa.link/teacae" 
+              class="bg-transparent border border-white text-white px-8 sm:px-10 py-4 sm:py-5 text-xs tracking-[0.25em] hover:bg-white hover:text-black transition-all duration-300 w-full sm:w-auto text-center"
+            >
+              WHATSAPP
+            </a>
+          </div>
         </div>
 
-        <!-- Título principal -->
-        <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-extralight text-white mb-8 leading-[0.9] tracking-tight">
-          Calle de<br/>
-          <span class="font-light">Conca 13</span>
-        </h1>
-
-        <!-- Detalles clave -->
-        <div class="flex items-center justify-center gap-8 md:gap-16 text-white/90 mb-12">
-          <div class="text-center">
-            <div class="text-3xl md:text-4xl font-extralight mb-1">198</div>
-            <div class="text-xs tracking-[0.2em]">M²</div>
-          </div>
-          <div class="w-px h-12 bg-white/20"></div>
-          <div class="text-center">
-            <div class="text-3xl md:text-4xl font-extralight mb-1">4</div>
-            <div class="text-xs tracking-[0.2em]">HAB</div>
-          </div>
-          <div class="w-px h-12 bg-white/20"></div>
-          <div class="text-center">
-            <div class="text-3xl md:text-4xl font-extralight mb-1">2</div>
-            <div class="text-xs tracking-[0.2em]">BAÑOS</div>
-          </div>
-        </div>
-
-        <!-- Precio destacado -->
-        <div class="mb-8 md:mb-12">
-          <div class="text-4xl sm:text-5xl md:text-6xl font-extralight text-white mb-2">570.000 €</div>
-          <div class="text-xs sm:text-sm text-white/60 tracking-wider">2.879 €/m² · Frente a Gran Vía</div>
-        </div>
-
-        <!-- CTAs -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-6 md:pt-8">
-          <a 
-            href="#contacto" 
-            class="group relative bg-white text-black px-8 sm:px-10 py-4 sm:py-5 text-xs tracking-[0.25em] hover:bg-black hover:text-white transition-all duration-300 overflow-hidden w-full sm:w-auto text-center"
-          >
-            <span class="relative z-10">SOLICITAR VISITA</span>
-          </a>
-          <a 
-            href="tel:+34602214093" 
-            class="bg-transparent border border-white text-white px-8 sm:px-10 py-4 sm:py-5 text-xs tracking-[0.25em] hover:bg-white hover:text-black transition-all duration-300 w-full sm:w-auto text-center"
-          >
-            LLAMAR AHORA
-          </a>
+        <!-- Columna formulario en el hero -->
+        <div class="w-full min-w-0 overflow-hidden">
+          <form id="contact-form" class="bg-white shadow-sm p-6 sm:p-8 md:p-12 space-y-5 md:space-y-6 w-full max-w-full">
+            <h2 class="text-lg md:text-xl font-semibold text-black mb-2 md:mb-4">
+              Solicitar visita
+            </h2>
+            <div class="w-full">
+              <label for="nombre" class="block text-xs tracking-wider text-gray-400 mb-3">NOMBRE COMPLETO</label>
+              <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                required
+                class="w-full max-w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors"
+                placeholder=""
+              />
+            </div>
+            
+            <div class="w-full">
+              <label for="email" class="block text-xs tracking-wider text-gray-400 mb-3">EMAIL</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="w-full max-w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors"
+                placeholder=""
+              />
+            </div>
+            
+            <div class="w-full">
+              <label for="telefono" class="block text-xs tracking-wider text-gray-400 mb-3">TELÉFONO</label>
+              <div class="flex items-center border-b border-gray-200 focus-within:border-black transition-colors w-full">
+                <select 
+                  id="codigo-pais" 
+                  name="codigo-pais"
+                  class="shrink-0 px-0 py-4 border-0 bg-transparent text-black focus:outline-none appearance-none cursor-pointer pr-6 text-sm"
+                  style="background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3e%3cpolyline points=\'6 9 12 15 18 9\'%3e%3c/polyline%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 0 center; background-size: 14px;"
+                >
+                  <option value="+34">+34</option>
+                  <option value="+33">+33</option>
+                  <option value="+39">+39</option>
+                  <option value="+49">+49</option>
+                  <option value="+44">+44</option>
+                  <option value="+351">+351</option>
+                  <option value="+1">+1</option>
+                  <option value="+52">+52</option>
+                  <option value="+54">+54</option>
+                  <option value="+55">+55</option>
+                </select>
+                <div class="w-px h-6 bg-gray-300 mx-2 shrink-0"></div>
+                <input 
+                  type="tel" 
+                  id="telefono" 
+                  name="telefono" 
+                  required
+                  class="flex-1 min-w-0 px-0 py-4 border-0 bg-transparent text-black focus:outline-none"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            
+            <div class="w-full">
+              <label for="mensaje" class="block text-xs tracking-wider text-gray-400 mb-3">MENSAJE</label>
+              <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                rows="4"
+                required
+                class="w-full max-w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors resize-none"
+                placeholder=""
+              ></textarea>
+            </div>
+            
+            <button 
+              type="submit"
+              id="submit-button"
+              class="w-full bg-black text-white px-4 sm:px-8 py-4 text-xs tracking-[0.15em] sm:tracking-[0.2em] hover:bg-gray-800 transition-colors mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              ENVIAR SOLICITUD
+            </button>
+            
+            <!-- Mensaje de estado (oculto por defecto) -->
+            <div id="form-message" class="hidden mt-4 p-4 text-sm text-center"></div>
+          </form>
         </div>
       </div>
     </div>
@@ -514,12 +598,12 @@ const keywords = "piso en venta calle conca valencia, comprar piso arrancapins v
           </p>
 
           <div class="space-y-6 md:space-y-10">
-          <div>
-            <div class="text-xs tracking-wider text-gray-400 mb-2 md:mb-3">TELÉFONO</div>
-            <a href="tel:+34602214093" class="text-xl md:text-2xl font-light text-black hover:text-gray-600 transition-colors">
-              +34 602 214 093
-            </a>
-          </div>
+            <div>
+              <div class="text-xs tracking-wider text-gray-400 mb-2 md:mb-3">TELÉFONO</div>
+              <a href="tel:+34602214093" class="text-xl md:text-2xl font-light text-black hover:text-gray-600 transition-colors">
+                +34 602 214 093
+              </a>
+            </div>
             
             <div class="overflow-hidden">
               <div class="text-xs tracking-wider text-gray-400 mb-2 md:mb-3">EMAIL</div>
@@ -530,7 +614,7 @@ const keywords = "piso en venta calle conca valencia, comprar piso arrancapins v
             
             <div>
               <div class="text-xs tracking-wider text-gray-400 mb-2 md:mb-3">WHATSAPP</div>
-              <a href="https://wa.me/34602214093" class="text-xl md:text-2xl font-light text-black hover:text-gray-600 transition-colors">
+              <a href="https://wa.link/teacae" class="text-xl md:text-2xl font-light text-black hover:text-gray-600 transition-colors">
                 Enviar mensaje
               </a>
             </div>
@@ -538,86 +622,11 @@ const keywords = "piso en venta calle conca valencia, comprar piso arrancapins v
         </div>
 
         <div class="w-full min-w-0 overflow-hidden">
-          <form id="contact-form" class="bg-white shadow-sm p-6 sm:p-8 md:p-12 space-y-5 md:space-y-6 w-full max-w-full">
-            <div class="w-full">
-              <label for="nombre" class="block text-xs tracking-wider text-gray-400 mb-3">NOMBRE COMPLETO</label>
-              <input 
-                type="text" 
-                id="nombre" 
-                name="nombre" 
-                required
-                class="w-full max-w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors"
-                placeholder=""
-              />
-            </div>
-            
-            <div class="w-full">
-              <label for="email" class="block text-xs tracking-wider text-gray-400 mb-3">EMAIL</label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                required
-                class="w-full max-w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors"
-                placeholder=""
-              />
-            </div>
-            
-            <div class="w-full">
-              <label for="telefono" class="block text-xs tracking-wider text-gray-400 mb-3">TELÉFONO</label>
-              <div class="flex items-center border-b border-gray-200 focus-within:border-black transition-colors w-full">
-                <select 
-                  id="codigo-pais" 
-                  name="codigo-pais"
-                  class="shrink-0 px-0 py-4 border-0 bg-transparent text-black focus:outline-none appearance-none cursor-pointer pr-6 text-sm"
-                  style="background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'%3e%3cpolyline points=\'6 9 12 15 18 9\'%3e%3c/polyline%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 0 center; background-size: 14px;"
-                >
-                  <option value="+34">+34</option>
-                  <option value="+33">+33</option>
-                  <option value="+39">+39</option>
-                  <option value="+49">+49</option>
-                  <option value="+44">+44</option>
-                  <option value="+351">+351</option>
-                  <option value="+1">+1</option>
-                  <option value="+52">+52</option>
-                  <option value="+54">+54</option>
-                  <option value="+55">+55</option>
-                </select>
-                <div class="w-px h-6 bg-gray-300 mx-2 shrink-0"></div>
-                <input 
-                  type="tel" 
-                  id="telefono" 
-                  name="telefono" 
-                  required
-                  class="flex-1 min-w-0 px-0 py-4 border-0 bg-transparent text-black focus:outline-none"
-                  placeholder=""
-                />
-              </div>
-            </div>
-            
-            <div class="w-full">
-              <label for="mensaje" class="block text-xs tracking-wider text-gray-400 mb-3">MENSAJE</label>
-              <textarea 
-                id="mensaje" 
-                name="mensaje" 
-                rows="4"
-                required
-                class="w-full max-w-full px-0 py-4 border-0 border-b border-gray-200 bg-transparent text-black focus:outline-none focus:border-black transition-colors resize-none"
-                placeholder=""
-              ></textarea>
-            </div>
-            
-            <button 
-              type="submit"
-              id="submit-button"
-              class="w-full bg-black text-white px-4 sm:px-8 py-4 text-xs tracking-[0.15em] sm:tracking-[0.2em] hover:bg-gray-800 transition-colors mt-8 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              ENVIAR SOLICITUD
-            </button>
-            
-            <!-- Mensaje de estado (oculto por defecto) -->
-            <div id="form-message" class="hidden mt-4 p-4 text-sm text-center"></div>
-          </form>
+          <div class="bg-gray-bg border border-gray-200 p-6 sm:p-8 md:p-10 h-full flex items-center justify-center text-center">
+            <p class="text-sm md:text-base text-gray-500 font-light leading-relaxed">
+              También puede contactar directamente por teléfono o WhatsApp, o utilizar el formulario destacado al inicio de la página.
+            </p>
+          </div>
         </div>
       </div>
     </div>
